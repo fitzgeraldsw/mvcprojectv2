@@ -2,7 +2,7 @@
 # Linux x64
 FROM ubuntu
 
-LABEL key="value"
+# LABEL key="value"
 
 # install Golang
 RUN sudo apt update
