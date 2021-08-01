@@ -13,7 +13,7 @@ import (
 func GetMessage() string {
 
 	fmt.Println("1. performing HTTP GET...")
-	resp, err := http.Get("http://localhost:8081")
+	resp, err := http.Get("http://constantv9:8081")
 
 	if err != nil {
 		log.Fatalln(err)
