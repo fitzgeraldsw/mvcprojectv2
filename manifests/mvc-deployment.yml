@@ -1,0 +1,18 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata:
+    name: mvc
+    namespace: default
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: mvc
+    template:
+        metadata:
+            labels:
+                app: mvc
+        spec:
+            containers:
+            - name: mvc-site
+              image: mvcprojectv2:v2
